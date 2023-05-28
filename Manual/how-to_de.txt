@@ -1,0 +1,166 @@
+
+
+1. Vorbereitungen: Audio Setup
+Normalerweise wird in OS X kein internes (System-) Audio aufgenommen, sondern nur externe Quellen (über Quicktime); entweder über das eingebaute Mikrofon oder über den Line-In Eingang. Um nun beliebiges Audio an Patchdirector zu senden, muss man daher ein kleines Tool installieren, welches eine Umleitung erlaubt. Ich empfehle das kostenlose Soundflower. 
+Die ganze Vorbereitung dauert keine 5 Minuten und es sind nur 2 Schritte zu tun: 
+
+Als erstes lade und installiere Soundflower: https://goo.gl/gQQYEB
+oder alternativ auf der Seite des Entwicklers Matt Ingalls bei Github: https://goo.gl/s9Ncmy.
+Nach der Installation muss nicht neu gestartet werden, es geht gleich weiter.
+
+b. Im zweiten Schritt senden wir das ganze Audiomaterial an 2 Ausgänge: sowohl an den normalen Ausgang (entweder interner Lautsprecher oder externe Audiokarte) um alles mithören zu können, als auch an Soundflower, das wiederum an Patchdirector sendet.
+
+[Bild: Device with two outputs]
+
+Öffne ->Programme->Dienstprogramme->Audio-Midi-Setup, dort im Menü Fenster->Audiogeräte anzeigen. Unten links nun auf das Plus-Zeichen drücken und "Gerät mit mehreren Ausgängen erstellen" auswählen (im Bild Punkt 1). Mit Doppelklick oder Eingabe/Enter den Namen ändern auf "Soundflower mit... (in meinem Fall "mit Scarlett")".
+Wähle im rechten Fenster (im Bild Punkt 2) einmal Soundflower (2ch) und einmal den zweiten Ausgang, an dem die Musik ebenfalls gehört werden soll. Der zweite Ausgang ist das Haupt-Gerät (oben im Dropdown auswählen, im Bild Punkt 3) und Soundflower (2ch) bekommt noch an der rechten Seite einen Haken bei Drift-Korrektur.
+In Patchdirector unter Voreinstellungen als ->Audio Input "Soundflower (2ch)" auswählen - fertig!
+
+[Bild: audio input device.jpg]
+
+
+2. Vorbereitungen: Modell, Bank, Presets und Gruppen anlegen
+a. Die langsame, individuelle Methode: Modell, Bank, Presets und Gruppen selber anlegen: jedes ->Modell hat mindestens eine ->Bank, in der sich ->Presets befinden. Vor Beginn einer Aufnahme müssen diese angelegt werden. 
+Gruppen sind ein mächtiges Werkzeug in Patchdirector und müssen auch vorher angelegt werden.
+ 
+ [Bild: Preferences.jpg]
+ 
+Im Tab ->Voreinstellungen wird diese Hierarchie von links nach rechts angelegt (1): 
+- zunächst wird das ->Modell (am besten mit Hersteller und Name des Synthesizers, bspw. Audjoo Helix) eingegeben
+- dann mit angewähltem Modell der Name für eine/mehrere ->Bank(en) (Alonso, B3, Big Tone etc pp) und 
+- zueltzt bei angewählter Bank die enthaltenen ->Presets eingegeben. 
+Die Editoren bei Bank und Presets (2) erlauben es, die Namen mit Copy/Paste einzufügen.
+- optional noch ein paar Basis-Gruppen anlegen (z.B. Favoriten, Temp...) und bei Bedarf erweitern.
+Presets können auch als .txt-Dateien importiert werden (3).
+
+Tipp: Selbstverständlich können alle Namen frei gewählt werden. Das macht dann Sinn, wenn man eigene Sound-Presets entwickelt. In dem Falle ist es wichtig, eigene Banknamen und Presetnamen zu vergeben und sie nicht mit Hersteller-Bänken zu mischen. 
+
+Hinweis: Die Namen/Dateien der Presets sind an mehreren möglichen Orten auf der Festplatte platziert, manche Hersteller (bspw. Korg) verpacken diese Presetlisten aber auch gerne in eigene Bänke (.fxb), die sich leider nicht auslesen lassen (mehr dazu in "Tips und Tricks")
+Auf unserer Webseite finden sich viele vorbereitete Preset-Listen im .txt-Format im Downloadbereich.
+
+b. Die schnelle Methode: Modell, Bank, Presets und Gruppen importieren
+Die einfachste Methode zur Vorbereitung für die Aufnahmen ist der Import von Containern im .padi-Format. Hier sind alle Informationen fix und fertig vorbereitet. 
+Hinweis: Audio-Aufnahmen werden ebenfalls in diesen .padi-Containern gespeichert.
+
+[Bild: Ex-Import.jpg]
+
+Der Import ist denkbar einfach: 
+- im Tab ->Ex-/Import einen Container öffnen (1). Patchdirector zeigt nun ausschliesslich nur diesen Container an: in der Titelleiste steht "Patchdirector - [Name des Containers].padi". Wenn alles passt (siehe Punkt 5), diesen Container importieren und zuletzt den Container wieder schliessen. 
+Nun zeigt Patchdirector alle Daten inklusive der neu importierten an: in der Titelleiste steht nur "Patchdirector".
+Anmerkung 1: Bei grossen Presetlisten, die mehrere Tausend Presets enthalten, kann der Import bis zu einer Minute oder länger dauern.
+Anmerkung 2: Wenn ein Container bereits Audio enthält, verhält sich der Import unter Umständen anders. Mehr Details dazu weiter unten im Punkt 5.
+
+3. Aufnahme und Attribute
+
+[Bild: Record.jpg]
+
+- Im Tab ->Aufnahme ein Modell und eine Bank wählen. Nun erscheinen alle Presets dieser Bank links in der grossen "Preset"-Box (6). 
+- Preset im Synthesizer anwählen, ebenso entsprechendes Preset aus der Liste im Patchdirector und entweder Vorhören oder direkt den ->Aufnahme-Button (1) scharf stellen (einfacher Mausklick oder Cmd/Strg+R). Die Aufnahme beginnt automatisch, sobald Audio herein kommt 
+- Vor der Aufnahme oder direkt danach die ->Attribute (2) vergeben 
+- der ->durchkreuzte Aufnahme-Button (3)(Cmd/Strg+D) löscht die Aufnahme, die Attribute (2) bleiben stehen
+- der Button ->Zurücksetzen vor Abspeichern (4) löscht die Aufnahme und setzt alle Attribute zurück (Achtung: nur vor der ersten Aufnahme)
+- der Button ->Sichern + nächstes (5)(Cmd/Strg+S) sichert die Aufnahme, vergibt einen gefüllten Kreis als ->Aufnahme-Indikator (6) und springt auf das nächste Preset
+- der Button ->Neues Preset (7) erzeugt in der aktuellen Bank ein neues Preset. 
+
+Tipp: eigene Presets nur in eigenen Bänken anlegen und nicht mit einer Hersteller-Bank mischen
+
+Es können beliebig viele Attribute für jedes Preset vergeben werden.
+Die Aufnahmezeit pro Preset ist auf 60 Sekunden begrenzt, sollte aber nicht weniger als 10 Sekunden lang sein. 
+Zuvor abgesicherte Presets können jederzeit neu aufgenommen und mit neuen Attributen versehen werden.
+
+
+4. Auswahl und Gruppen
+
+[Bild: Select.jpg]
+
+Die Auswahl (oder Suche) ist sehr flexibel und kann über die gesamte Datenbank oder nur Teilen davon gehen. Insgesamt stehen 60 Attribute und deren kreuzweise Kombinationen zur Verfügung.
+- die Wahl der Quellen (1) bestimmt den Umfang des Resultats: ->Alle oder bestimmte Modelle, ->Alle oder bestimmte Bänke, ->Alle oder bestimmte Gruppen
+- Die Liste der Attribute (2) ->Instrumente erweitert die Auswahl ("Zeige alle Aufnahmen mit den Attributen Bass, Keyboard und Pad."): trifft eines oder mehrere der Attribute zu, wird jedes passende Preset angezeigt. 
+- ->Kategorie und Charakter verengen die Auswahl ("Zeige aus der gewählten Instrumentenliste nur die mit der Kategorie X und den Charakter Y an."): nur, wenn die Kombination passt, werden entsprechende Resultate gezeigt. 
+Tipp: Es empfiehlt sich, nur mit einem oder zwei Attributen aus Kategorie und Charakter zu suchen.
+
+Aus den Resultaten (3) können die Ergebnisse angehört und ausgewählt werden (4). Verweilt die Maus kurze Zeit über einem Resultat (3a), erscheint in einem Tooltip der Name des Modells und der dazu gehörende Name der Bank.
+
+Die ausgewählten Presets können nun 
+- zu bereits vorhandenen Gruppen hinzugefügt werden (5)
+- aus vorhandenen Gruppen gelöscht werden (6) oder
+- das Audio gelöscht werden (7).
+(das Löschen von Presets wird in Punkt 5 behandelt: Import von Containern)
+Sollen in den Resultaten alle Presets auftauchen, auch solche ohne Audio, muss die Tickbox ->Inklusive Presets ohne Audio gewählt werden.
+
+Tipps: 
+- Sounds für Projekte oder Songs können in Gruppen angelegt werden 
+- Ganze Modelle können in Gruppen zusammengefasst und exportiert werden
+- Gruppen können Presets aus allen vorhandenen Bänken und Modellen enthalten.
+
+Eine besondere Funktion ist der Export ausgewählter Presets (9). 
+
+
+5. Export und Import
+
+[Bild: Ex-Import.jpg]
+
+Es gibt es zwei Möglichkeiten, Presets/Gruppen zu exportieren: 
+a. im .padi-Format (1): es wird ein Container erzeugt, in welchem Presets mit oder ohne Audio gespeichert werden. Die Herkunft eines Presets bleibt dabei voll erhalten (siehe Import)
+Beim Export als Container-Datei können in einem ->Info-Fenster (3) weitere Informationen eingegeben werden (optional).  
+b. Export als einzelne MP3-Dateien oder als Zip-gepackte Datei (2). Auch hier bleibt die Hierarchie Modell-Bank-Preset erhalten und eine entsprechende Ordnerstruktur erzeugt
+
+Beim ->Import eines .padi-Containers werden komplett vorgefertigte Strukturen (Modell-Bank-Preset und Gruppe) weitergegeben. Ist ein Modell, eine Bank oder eine Gruppe nicht angelegt, wird dies beim Import automatisch gemacht.
+
+Beim Import wird zunächst ein Container geöffnet (4), um die Möglichkeit zu haben, Presets zum Import vorher auszusuchen. Solange der Container geöffnet ist, zeigt Patchdirector ausschliesslich nur diesen Container an: in der Titelleiste steht nun "Patchdirector - [Name des Containers].padi". Wenn eine zusätzliche Info mitgegeben wurde, öffnet sich das Info-Fenster (3).
+- im Select-Tab kann nun nach Modell, Bank, Gruppe oder Attributen gefiltert werden (optional)
+- wenn KEIN Audio mitgeliefert wurde, wird beim Klick auf den Button ->Import (5) die Struktur wie oben beschrieben angelegt und alle gewählten, bzw. enthaltenen Presets geladen. 
+- wenn Audiomaterial vorhanden ist, kann man im Select-Fenster in der Gruppe <Duplicates> (8) bereits vorhandene Presets mit Audio anhören und, wenn gewünscht, vor dem Import löschen (9). Es werden keine Dateien im Original-Container gelöscht. 
+
+[Bild: Import duplicates group.jpg]
+
+- Sollen Duplikate importiert werden, erscheint vor dem Import noch eine Sicherheitsabfrage
+
+[Bild: import duplicates info.jpg]
+
+Zum Schluss des Importvorgangs muss der Container wieder geschlossen werden. Nun zeigt Patchdirector wieder alle Daten inklusive der neu importierten an: in der Titelleiste steht nur "Patchdirector".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
