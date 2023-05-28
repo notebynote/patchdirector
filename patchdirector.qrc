@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/media-pause-32.png</file>
+        <file>res/media-play-32.png</file>
+        <file>res/media-stop-32.png</file>
+        <file>res/media-record-32.png</file>
+        <file>res/media-record-red-32.png</file>
+        <file>res/minus-32.png</file>
+        <file>res/plus-32.png</file>
+        <file>res/media-play-btn-32.png</file>
+        <file>res/media-stop-btn-32.png</file>
+        <file>res/blank-32.png</file>
+        <file>res/media-delete-red-32.png</file>
+        <file>res/Info.html</file>
+        <file>res/Weblogo.png</file>
+        <file>translations/patchdirector_de.qm</file>
+        <file>res/Info_de.html</file>
+        <file>res/EULA.html</file>
+        <file>res/EULA_de.html</file>
+        <file>res/media-record-wm-32.png</file>
+        <file>res/media-record-wm-red-32.png</file>
+        <file>res/watermark.pcm</file>
+    </qresource>
+</RCC>
