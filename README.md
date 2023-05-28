@@ -1,5 +1,8 @@
 # patchdirector
 sound repository from all kind of synths -virtual instrument or hardware
+Available versions in german and english for Win/Mac
+Deutsche und englische Versionen Win/Mac erhältlich
+
 Patchdirector is a unique, intuitive and easy-to-use sound archive and audio manager for your own sounds and presets. 
 You can share all samples, protect them from abuse with an audio watermark, load shared samples easily, tag them, sort them... and much more. 
 
