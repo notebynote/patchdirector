@@ -5,7 +5,7 @@ Available versions in german and english for Win/Mac
 
 Deutsche und englische Versionen Win/Mac erhältlich
 
-Patchdirector is a unique, intuitive and easy-to-use sound archive and audio manager for your own sounds and presets. 
+Patchdirector is a unique, intuitive and easy-to-use sound archive, a search machine and audio manager for your own sounds and presets. 
 You can share all samples, protect them from abuse with an audio watermark, load shared samples easily, tag them, sort them... and much more. 
 
 Patchdirector is a program for recording, previewing and managing sound patches and presets. 
