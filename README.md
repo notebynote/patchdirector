@@ -12,6 +12,7 @@ Patchdirector is a program for recording, previewing and managing sound patches 
 You can save your own creations (instruments, banks, presets). 
 But you can also access prepared lists and audio samples if you import them.
 In addition, groups/collections can be formed from different models and banks, which can be shared as exported container files or MP3 files.
+
 Composing your songs and collaborating with others becomes more diverse, faster, and most importantly: much easier.
 
 System requirements Windows 7 and OS X 10.8 or higher (tested on Mac OS 12.6 works flawless)
