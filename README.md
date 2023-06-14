@@ -1,9 +1,11 @@
 # patchdirector
-sound repository from all kind of synths -virtual instrument or hardware
+![Logo facebook (600-311)](https://github.com/notebynote/patchdirector/assets/22618863/879a9edf-3037-42d7-a7e0-bd77bff5dd69)
 
-Available versions in german and english for Win/Mac
+Sound repository from all kind of synths: virtual instrument or even hardware
 
-Deutsche und englische Versionen Win/Mac erhältlich
+Available versions in german and english for Win and Mac
+
+Deutsche und englische Versionen Win und Mac erhältlich
 
 Patchdirector is a unique, intuitive and easy-to-use sound archive, a search machine and audio manager for your own sounds and presets. 
 Record and collect sounds, share all samples packed in a convenient container, protect them from abuse with an audio watermark, load shared samples easily, tag,sort, group them... and much more. 
@@ -28,6 +30,8 @@ See some screenshot Win and Mac
 ![final_mac gold](https://github.com/notebynote/patchdirector/assets/22618863/d275b3a1-58af-4944-8494-6f3448d71c0a)
 
 
+
+It´s free! Use it!
 Patchdirector is not present on social media.
 If you like to get in touch with me, please write a message via my personal FB-account https://www.facebook.com/haake.thomas/
 or to my mailbox thomas.haake@gmail.com
