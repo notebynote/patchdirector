@@ -17,7 +17,7 @@ In addition, groups/collections can be formed from different models and banks, w
 
 Composing your songs and collaborating with others becomes more diverse, faster, and most importantly: much easier.
 
-System requirements Windows 7 and OS X 10.8 or higher (tested on Mac OS 12.6 works flawless)
+System requirements Windows 7 and OS X 10.8 or higher (tested on Mac OS 15.6.1 works flawless)
 
 See some screenshot Win and Mac
 
